@@ -64,9 +64,9 @@ void insert_at_end(node* head,int data){
 }
 
 //delete specific value from list
-node* deleteNode(struct node* head, int key) 
+node* deleteNode(node* head, int key) 
 { 
-    struct node *temp = head; 
+    node *temp = head; 
 
     if(temp->next==nullptr)
         return nullptr;
@@ -90,7 +90,7 @@ node* deleteNode(struct node* head, int key)
 
 //delete from beginning
 node* delete_beg(node* head){
-    struct node *temp = head; 
+    node *temp = head; 
 
     if(temp->next==nullptr)
         return nullptr;
@@ -103,7 +103,7 @@ node* delete_beg(node* head){
 
 //delete from end
 node* delete_end(node* head){
-    struct node *temp = head; 
+    node *temp = head; 
 
     if(temp->next==nullptr)
         return nullptr;
